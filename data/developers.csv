@@ -1,0 +1,11 @@
+name,lat,lng,project_type,region,deal_summary,capacity_mw,price_per_mw_aud,financing_option,contact_email
+SolarCo,-33.8688,151.2093,Ground-mounted,New South Wales,"10 MW lease, full maintenance",10,950000,Lease,sales@solarco.com.au
+SunPower Solutions,-37.8136,144.9631,Commercial,Victoria,"5 MW rooftop PPA for warehouse clusters",5,1100000,Power Purchase Agreement,info@sunpower.com
+Green Horizon Energy,-27.4698,153.0251,Ground-mounted,Queensland,"25 MW buyout for industrial client",25,875000,Buyout,contact@greenhorizon.com.au
+EcoFuture Developments,-31.9505,115.8605,Commercial,Western Australia,"8 MW commercial building integration",8,1000000,Lease,partners@ecofuture.com.au
+SunGrid Australia,-34.9285,138.6007,Ground-mounted,South Australia,"12 MW hybrid solar + storage system",12,970000,Lease,pitch@sungrid.com.au
+HelioWorks,-33.4254,151.3427,Rooftop,New South Wales,"2 MW distributed rooftop installations",2,1250000,Power Purchase Agreement,info@helioworks.com.au
+BrightPath Renewables,-42.8821,147.3272,Commercial,Tasmania,"4 MW mid-scale solar project",4,1020000,Lease,contact@brightpath.com.au
+TerraNova Energy,-19.2576,146.8179,Ground-mounted,Queensland,"18 MW solar farm with long-term O&M contract",18,920000,Buyout,admin@terranova.com.au
+SolRise Projects,-35.2809,149.1300,Rooftop,ACT,"3 MW rooftop installations for public buildings",3,1180000,Lease,projects@solrise.com.au
+BlueSky Solar Group,-32.9283,151.7817,Ground-mounted,New South Wales,"15 MW farm with 10-year PPA option",15,960000,Power Purchase Agreement,hello@blueskysolar.com

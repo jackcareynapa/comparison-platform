@@ -1,0 +1,37 @@
+company,lat,lng,location,classification,services,offer_model,project_size_range,federal_state,reference_projects
+AlpineVolt Development AG,51.1657,10.4515,Rosenheim,Ground-Mounted Solar,Mountain area design with snow load calculations,EPC/Project Sale,1–10 MW,Bavaria,Chiemgau Field (4 MW
+Baltic PV Works GmbH,54.0924,12.0991,Rostock,Ground-Mounted & Agri-PV,Coastal projects with bird protection concepts,Lease + Participation,>10 MW,Mecklenburg-Western Pomerania,Ribnitz PV Park (11 MW
+Elbe Renewables GmbH,51.0504,13.7373,Dresden,Ground-Mounted Solar,Land pooling & citizen participation,Lease/Participation,>10 MW,Saxony,Elbe South Park (14 MW
+Hanseatic AgriPV GmbH,51.1657,10.4515,Lueneburg,Agri-PV (Vertical),Vertical bifacial systems ensuring full crop yield,Sale/Installation,1–5 MW,Lower Saxony,AgriPV Bardowick (2.1 MW
+BlackForest Solar Construction GmbH,51.1657,10.4515,Freiburg,Ground-Mounted Solar,Nature compensation & environmental planning,Lease,1–10 MW,Baden-Wuerttemberg,PV Denzlingen (5 MW
+HavelSun Projects GmbH,51.1657,10.4515,Potsdam,Ground-Mounted Solar,Conversion land & grid feasibility,Lease/EPC,>10 MW,Brandenburg,Falkensee Airfield (13 MW
+SpreeVolt Energy GmbH,52.52,13.405,Berlin,Ground-Mounted & Agri-PV,Project structuring & PPA negotiation,Cooperation/Participation,>20 MW,Brandenburg,Spreewald PPA Park (21 MW
+Ruhr PV Systems GmbH,51.1657,10.4515,Essen,Ground-Mounted Solar,Industrial PV + on-site storage,Own Operation/Lease,5–10 MW,NRW,Zollverein PV (6 MW
+DanubeSolar Projects GmbH,51.1657,10.4515,Regensburg,Ground-Mounted Solar,Environmental impact & cable routing studies,Lease,1–10 MW,Bavaria,Danube Meadow (3.8 MW
+IsarGrid Energy GmbH,48.1351,11.582,Munich,Ground-Mounted & Agri-PV,Hybrid PV + Wind integration,Lease/Cooperation,>20 MW,Bavaria,Isar Hybrid (24 MW
+WeserWatt GmbH,51.1657,10.4515,Oldenburg,Ground-Mounted Solar,Drainage & moorland system design,EPC/Lease,1–10 MW,Lower Saxony,Marschland North (4.5 MW
+Taunus Renewables UG,48.775846,9.182932,Wiesbaden,Ground-Mounted Solar,Municipal dialogue & community funds,Participation/Lease,5–10 MW,Hesse,Taunusstein PV (7.2 MW
+MoselSun Power GmbH,51.1657,10.4515,Trier,Ground-Mounted Solar,Viticulture-optimized mounting structures,EPC/Cooperation,1–5 MW,Rhineland-Palatinate,Mosel Hillside (1.6 MW
+Eifel PV Projects GmbH,51.1657,10.4515,Daun,Ground-Mounted Solar,Hillside projects & soil testing,Lease,1–5 MW,Rhineland-Palatinate,Eifel West (2.4 MW
+Lausitz SolarWorks GmbH,51.1657,10.4515,Cottbus,Ground-Mounted Solar,Reclamation & storage integration,Lease/Own Operation,>10 MW,Brandenburg,Lausitz South (15 MW
+LakeConstance Energy Park GmbH,51.1657,10.4515,Konstanz,Ground-Mounted Solar,Lakefront / coastal wind & PV integration,EPC/Project Sale,1–10 MW,Baden-Wuerttemberg,Seewiese Allensbach (3.2 MW
+Allgaeu AgriPV GmbH,51.1657,10.4515,Kempten,Agri-PV,Berry/orchard layouts & hail protection,Cooperation/Sale,0.5–5 MW,Bavaria,AgriPV Oberstdorf (0.9 MW
+NorthFrisia Solar GmbH,51.1657,10.4515,Husum,Ground-Mounted Solar,Storm load optimization & coastal protection,Lease,>10 MW,Schleswig-Holstein,Hallig Park (10.5 MW
+Lueneburg Fields Solar KG,51.1657,10.4515,Lueneburg,Ground-Mounted Solar,Flora-fauna compatibility assessments,Project Sale/Lease,1–10 MW,Lower Saxony,Lueneburg Heath (6.1 MW
+Uckermark PV GmbH,51.1657,10.4515,Prenzlau,Ground-Mounted & Agri-PV,Grazing integration with PV layouts,Lease/Participation,5–10 MW,Brandenburg,Uckermark North (7.4 MW
+PalatinateSun GmbH,51.1657,10.4515,Neustadt a.d.W.,Ground-Mounted Solar,State-level PPA project planning,Cooperation/Lease,>10 MW,Rhineland-Palatinate,Palatinate PPA (12.7 MW
+Hunsrueck Solar AG,51.1657,10.4515,Idar-Oberstein,Ground-Mounted Solar,Grid connection & supervision,Lease,1–10 MW,Rhineland-Palatinate,Hunsrueck East (4.1 MW
+MarkSolar GmbH,51.1657,10.4515,Eberswalde,Ground-Mounted Solar,Forest conversion & biodiversity protection,Lease/Cooperation,>10 MW,Brandenburg,Barnim Solar (11.8 MW
+BalticLand PV GmbH,51.1657,10.4515,Greifswald,Ground-Mounted Solar,Raptor monitoring & ecological design,Lease,5–10 MW,Mecklenburg-Western Pomerania,Loitz PV (5.6 MW
+HarzHelio GmbH,51.1657,10.4515,Wernigerode,Ground-Mounted Solar,Mountain terrain design & coordination,EPC/Lease,1–5 MW,Saxony-Anhalt,Harz Edge (2.0 MW
+Thuringia Trackers GmbH,51.1657,10.4515,Erfurt,Agri-PV (Tracker),Single-axis trackers, field test & O&M,Sale/Installation 1–5 MW,Thuringia,N/A
+Vogtland Volt GmbH,51.1657,10.4515,Plauen,Ground-Mounted Solar,Cable route optimization & bundling,Lease/Project Sale,1–10 MW,Saxony,Vogtland West (3.9 MW
+Chiemgau PV Works GmbH,51.1657,10.4515,Traunstein,Ground-Mounted Solar,Permitting & procurement, EPC/Lease,5–10 MW,Bavaria,Chiemgau Central (8.2 MW
+Muensterland Solar GmbH,51.1657,10.4515,Coesfeld,Ground-Mounted & Agri-PV,Biotope & hedge integration,Lease/Participation,1–10 MW,NRW,Rosendahl PV (4.7 MW
+LowerRhine Energy GmbH,51.1657,10.4515,Kleve,Ground-Mounted Solar,Clay/peat soil engineering & substructure,Lease,1–5 MW,NRW,Lower Rhine South (2.9 MW
+UpperPalatinate PV GmbH,51.1657,10.4515,Weiden i.d.OPf.,Ground-Mounted Solar,Snow load zone 3 coordination,Lease/EPC,1–10 MW,Bavaria,Upper Palatinate East (5.3 MW
+Prignitz Solar GmbH,51.1657,10.4515,Wittenberge,Ground-Mounted Solar,Railway/roadside PV + PPA,Lease/Cooperation,>10 MW,Brandenburg,Prignitz West (12.4 MW
+Flaeming Solar UG,51.1657,10.4515,Bad Belzig,Ground-Mounted Solar,Nature conservation & vegetation plans,Lease,1–5 MW,Brandenburg,Flaeming South (2.2 MW
+Altmark Renewables GmbH,51.1657,10.4515,Stendal,Ground-Mounted Solar,Conversion & former military sites,Lease/Own Operation,>10 MW,Saxony-Anhalt,Altmark North (16 MW
+Weserland AgriVolt GmbH,51.1657,10.4515,Nienburg/Weser,Agri-PV,Pasture & arable land integration, demo sites,Cooperation/Sale 0.5–5 MW,Lower Saxony,N/A
+HelioRhein Consulting GmbH,51.1657,10.4515,Bonn,Ground-Mounted Solar,Due diligence & bankability advisory,Acquisition/Project Sale,>10 MW,NRW,Rhein-Sieg Cluster (10.1 MW
