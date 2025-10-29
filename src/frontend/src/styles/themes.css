@@ -1,0 +1,578 @@
+:root {
+  --tb-accent-1: #22cb64; /* green */
+  --tb-accent-2: #0b85c5; /* blue */
+  --tb-dark: #0b2230;
+  --tb-muted: rgba(11,34,48,0.65);
+  --tb-radius: 10px;
+  --tb-control-height: 44px;
+}
+
+/* Reset small things inside the component */
+.tb-landing {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: var(--tb-dark);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.tb-header {
+  background: rgba(255,255,255,0.92);
+  border-bottom: 1px solid rgba(11,34,48,0.04);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+}
+
+.tb-tagline {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.tb-title {
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+.tb-sub {
+  font-size: 11px;
+  color: var(--tb-muted);
+}
+
+
+
+
+/* CTA button in header */
+.tb-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Hero */
+.tb-hero {
+  flex: 1 0 auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 72vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 20px;
+  color: black;
+  position: relative;
+}
+
+.tb-hero-inner {
+  max-width: 980px;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.tb-hero-title {
+  font-size: clamp(30px, 4.8vw, 64px);
+  margin: 0;
+  line-height: 1;
+  font-weight: 800;
+  text-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  letter-spacing: -0.02em;
+}
+
+.tb-em {
+  color: var(--tb-accent-1);
+  display: inline-block;
+  margin-left: 6px;
+}
+
+.tb-hero-sub {
+  margin-top: 18px;
+  color: rgba(255,255,255,0.92);
+  font-size: 18px;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.95;
+}
+
+/* Hero buttons */
+.tb-hero-actions {
+  margin-top: 28px;
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tb-btn-primary {
+  background: linear-gradient(
+    90deg,
+    rgba(34, 203, 100, 0.18),
+    rgba(11, 133, 197, 0.12)
+  );
+  color: #064e3b;
+  border: 1px solid rgba(34, 203, 100, 0.2);
+  box-shadow: 0 3px 8px rgba(34, 203, 100, 0.2),
+              0 0 6px rgba(11, 133, 197, 0.15);
+}
+
+/* Glow + lift on hover */
+.tb-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(34, 203, 100, 0.35),
+              0 0 10px rgba(11, 133, 197, 0.25);
+}
+
+/* Press feedback */
+.tb-btn-primary:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(34, 203, 100, 0.2);
+}
+
+
+/* Footer */
+.tb-footer {
+  border-top: 1px solid rgba(11,34,48,0.04);
+  background: white;
+  padding: 16px 0;
+}
+
+.tb-footer-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--tb-muted);
+  font-size: 13px;
+}
+
+.tb-footer-links {
+  display: flex;
+  gap: 12px;
+}
+
+
+
+/* ===============================
+   Collapsible Map Filter Toolbar
+   =============================== */
+.tb-filter-bar {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  z-index: 2000;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.tb-filter-toggle {
+  background: var(--tb-accent-2);
+  color: white;
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tb-filter-toggle:hover {
+  opacity: 0.9;
+}
+
+/* Consolidated overrides appended */
+
+/* Consolidated header / brand / logo */
+.tb-header {
+  background: rgba(255,255,255,0.92);
+  border-bottom: 1px solid rgba(11,34,48,0.04);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+  padding: 12px 0;
+}
+
+.tb-header-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.tb-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.tb-logo {
+  width: 50%;
+  height: auto;
+  display: block;
+}
+
+/* Consolidated nav + underline animation */
+
+.tb-nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.tb-nav a {
+  position: relative;
+  text-decoration: none;
+  color: var(--tb-dark);
+  font-weight: 500;
+  font-size: 14px;
+  padding-bottom: 4px;
+  transition: color 0.2s ease;
+  opacity: 0.85;
+}
+
+.tb-nav a.active,
+.tb-nav a[aria-current="page"] {
+  color: var(--tb-accent-1);
+  font-weight: 700;
+  opacity: 1;
+}
+
+.tb-nav a::before,
+.tb-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  transform-origin: left;
+  transition: width 0.3s ease;
+}
+
+.tb-nav a::before { background-color: #000; transition-duration: 0.3s; }
+.tb-nav a::after  { background-color: var(--tb-accent-1); transition-duration: 0.45s; }
+
+.tb-nav a:hover { opacity: 1; }
+.tb-nav a:hover::before,
+.tb-nav a:hover::after { width: 100%; }
+
+/* Base button */
+.tb-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  color: #064e3b; /* dark green text to match StatPill */
+  background: rgba(34, 203, 100, 0.12);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Lift + glow on hover */
+.tb-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(34, 203, 100, 0.25),
+              0 0 6px rgba(11, 133, 197, 0.2);
+}
+
+/* Press-down feedback */
+.tb-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(34, 203, 100, 0.15);
+}
+
+/* Disabled state */
+.tb-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.tb-btn-outline {
+  background: white;
+  border: 1px solid rgba(11,34,48,0.08);
+  box-shadow: 0 2px 8px rgba(11,34,48,0.03);
+}
+
+
+
+.tb-carousel-wrapper {
+  position: relative;
+  margin: 80px 0;
+  padding: 2px 52px;
+}
+
+.tb-carousel {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  padding: 20px 6px;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  align-items: start;
+}
+
+.tb-carousel-item {
+  flex: 0 0 290px;
+  scroll-snap-align: center;
+  transition: transform 0.18s ease, opacity 0.18s ease;
+  opacity: 0.95;
+}
+
+.tb-carousel-item.active {
+  transform: translateY(-8px) scale(1.03);
+  z-index: 5;
+  opacity: 1;
+  box-shadow: 0 12px 32px rgba(11, 34, 48, 0.08);
+}
+
+/* Arrows */
+.tb-carousel-prev,
+.tb-carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 0;
+  background: rgba(11, 34, 48, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 10;
+  transition: background 0.12s ease;
+}
+
+.tb-carousel-prev:hover,
+.tb-carousel-next:hover {
+  background: rgba(11, 34, 48, 0.12);
+}
+
+.tb-carousel-prev {
+  left: 12px;
+}
+.tb-carousel-next {
+  right: 12px;
+}
+
+@media (max-width: 720px) {
+  .tb-carousel-wrapper {
+    padding: 6px 12px;
+  }
+  .tb-carousel-item {
+    flex: 0 0 86%;
+  }
+  .tb-carousel-prev,
+  .tb-carousel-next {
+    display: none;
+  }
+}
+
+.tb-filter-bar.open { width: 320px; padding: 12px; }
+.tb-filter-content { display: flex; flex-direction: column; gap: 12px; margin-top: 12px; }
+.tb-filter-row { display: flex; flex-direction: column; gap: 6px; font-size: 13px; }
+.tb-filter-row label { font-weight: 600; font-size: 13px; color: var(--tb-dark); }
+.tb-filter-actions { display:flex; gap:8px; justify-content:flex-end; margin-top:8px; }
+
+.bob-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;                 /* centers horizontally */
+  width: 64px;
+  height: 64px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: #000;
+  cursor: pointer;
+  transition: color 0.25s ease, transform 0.2s ease;
+}
+
+.bob-button:hover {
+  color: #22cb64;                 /* green on hover */
+  transform: scale(1.1);
+}
+
+/* Spinning animation when loading */
+.bob-button.loading .gear-icon {
+  animation: spin 1.2s linear infinite;
+}
+
+/* Simple keyframes for spin */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.bob-button .gear-icon {
+  width: 64px;                        /* explicit control */
+  height: 64px;
+  stroke-width: 1.5;                  /* makes lines a bit bolder */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 880px) {
+  .tb-nav {
+    display: none;
+  }
+  .tb-hero-inner {
+    padding: 24px 12px;
+  }
+  .tb-hero-sub {
+    font-size: 15px;
+  }
+  .tb-footer-inner {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+}
+
+/* =========================
+   Stat Pill component
+   ========================= */
+.stat-pill {
+  background: rgba(34, 203, 100, 0.12);
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 13px;
+  color: #064e3b;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+/* The label text inside the pill */
+.stat-pill .label {
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+/* The value section inside the pill */
+.stat-pill .value {
+  background: #fff;
+  padding: 2px 8px;
+  border-radius: 999px;
+  color: #064e3b;
+  font-weight: 700;
+}
+
+.developer-card {
+  width: 250px;
+  height: 200px;                 /* adjust to taste */
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #eef2f6;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.06);
+  padding: 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;          /* horizontally center everything */
+  justify-content: flex-start;  /* start from top; don't space items */
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s;
+  cursor: pointer;
+}
+
+.developer-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.10);
+}
+
+/* Company name at the top */
+.developer-card__name {
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  color: #111827;
+  margin: 2px 0 8px 0;
+}
+
+/* Logo placeholder container */
+.developer-card__logo {
+  width: 100%;
+  height: 96px;               /* fixed area for logos */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  flex: 0 0 auto;             /* do not grow/shrink */
+}
+
+.developer-card__logo img {
+  max-height: 86px;
+  max-width: 80%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* If no logo */
+.developer-card__no-logo {
+  width: 80px;
+  height: 60px;
+  background: rgba(107,114,128,0.06);
+  border-radius: 8px;
+  color: #9ca3af;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+/* Make the central content area flexible so buttons are pushed down */
+.developer-card__content {
+  width: 100%;
+  flex: 1 1 auto;            /* this grows to fill remaining space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Action row pinned to bottom */
+.developer-card__actions {
+  width: 100%;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 12px;
+  flex: 0 0 auto;            /* keep actions at the bottom area */
+}
+
+/* Optional smaller button style override if needed */
+.developer-card .tb-btn {
+  padding: 10px 18px;
+  border-radius: 999px;
+}

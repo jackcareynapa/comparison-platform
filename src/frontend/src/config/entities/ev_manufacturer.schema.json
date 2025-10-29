@@ -1,0 +1,16 @@
+{
+  "type": "ev_manufacturer",
+  "label": "EV Manufacturer",
+  "displayNameField": "name",
+  "map": { "latField": "hq_lat", "lngField": "hq_lng", "pinLabel": "{name}" },
+  "fields": [
+    { "id": "name", "type": "string", "label": "Name", "sortable": true },
+    { "id": "country", "type": "select", "label": "Country", "options": ["Germany","USA","China"], "filterable": true },
+    { "id": "annual_prod", "type": "number", "label": "Annual Production", "filterable": true },
+    { "id": "models", "type": "string", "label": "Known Models", "filterable": false },
+    { "id": "website", "type": "url", "label": "Website" }
+  ],
+  "cardTemplate": ["name","annual_prod","country"],
+  "compareOrder": ["name","annual_prod","country"],
+  "defaultSort": { "field": "annual_prod", "dir": "desc" }
+}

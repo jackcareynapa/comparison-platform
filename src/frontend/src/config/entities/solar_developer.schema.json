@@ -1,0 +1,16 @@
+{
+  "type": "solar_developer",
+  "label": "Solar Developer",
+  "displayNameField": "name",
+  "map": { "latField": "latitude", "lngField": "longitude", "pinLabel": "{name}" },
+  "fields": [
+    { "id": "name", "type": "string", "label": "Name", "sortable": true },
+    { "id": "country", "type": "select", "label": "Country", "options": ["Germany","France","Spain"], "filterable": true },
+    { "id": "capacity_mw", "type": "number", "label": "Capacity (MW)", "filterable": true, "sortable": true },
+    { "id": "status", "type": "select", "label": "Status", "options": ["Active","Pipeline","Closed"], "filterable": true },
+    { "id": "website", "type": "url", "label": "Website" }
+  ],
+  "cardTemplate": ["name","capacity_mw","status"],
+  "compareOrder": ["name","capacity_mw","status"],
+  "defaultSort": { "field": "capacity_mw", "dir": "desc" }
+}

@@ -1,21 +1,13 @@
 import React from "react";
 
-/**
- * ComparisonHotbar
- *
- * Props:
- * - selectedDevelopers: array of developer objects (or objects with .raw)
- * - onRemove: function(devOrName) -> parent will remove by name
- * - onCompare: optional function invoked to open the compare UI
- */
-
-// local helper
+// Helper to get developer name
 const getName = (devOrName) => {
   if (!devOrName) return undefined;
   if (typeof devOrName === "string") return devOrName;
   return devOrName.name ?? (devOrName.raw && devOrName.raw.name) ?? devOrName.Company ?? devOrName.company;
 };
 
+// ComparisonHotbar component
 export default function ComparisonHotbar({ selectedDevelopers = [], onRemove = () => {}, onCompare = () => {} }) {
   if (!selectedDevelopers || selectedDevelopers.length === 0) {
     return (
@@ -31,7 +23,7 @@ export default function ComparisonHotbar({ selectedDevelopers = [], onRemove = (
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <strong>Selected ({selectedDevelopers.length})</strong>
         <div>
-          <button onClick={() => onCompare()} style={{ marginLeft: 8 }}>
+          <button className="tb-btn tb-btn-primary" onClick={() => onCompare()}>
             Compare
           </button>
         </div>
@@ -62,7 +54,7 @@ export default function ComparisonHotbar({ selectedDevelopers = [], onRemove = (
               </div>
 
               <div style={{ display: "flex", gap: 8 }}>
-                <button
+                <button className="tb-btn tb-btn-primary"
                   title="Remove"
                   onClick={(e) => {
                     e.stopPropagation();

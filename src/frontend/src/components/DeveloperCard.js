@@ -1,55 +1,49 @@
 import React from "react";
 
-/**
- * DeveloperCard
- *
- * Small summary card for a developer, used in lists.
- *
- * Props:
- * - dev: developer object (may have .raw)
- * - onSelect: function called when card is clicked
- */
-
-// Get field helpers that check top-level and .raw
-const get = (dev, key) => (dev ? dev[key] ?? (dev.raw && dev.raw[key]) ?? undefined : undefined);
-const getName = (dev) => get(dev, "name") ?? get(dev, "Company") ?? get(dev, "company") ?? "Unknown";
-
-export default function DeveloperCard({ dev, onSelect = () => {} }) {
-  const name = getName(dev);
-  const projectType = get(dev, "project_type") ?? get(dev, "classification") ?? "";
-  const region = get(dev, "region") ?? get(dev, "location") ?? "";
-  const capacity = get(dev, "capacity_mw") ?? get(dev, "project_size_range") ?? "";
+export default function DeveloperCard({
+  dev = {},
+  onSelect = () => {},
+  onLearnMore = () => {},
+  isActive = false,
+}) {
+  const companyName = dev.name || dev.Company || dev.company || "Unnamed Developer";
 
   return (
     <div
-      onClick={() => onSelect(dev)}
+      className="developer-card"
       style={{
-        border: "1px solid #eee",
-        borderRadius: 8,
-        padding: 12,
-        cursor: "pointer",
-        background: "#fff",
+        border: isActive ? "2px solid #22c55e" : undefined
       }}
-      role="button"
-      tabIndex={0}
-      onKeyDown={(e) => {
-        if (e.key === "Enter") onSelect(dev);
+      onMouseEnter={(e) => {
+        e.currentTarget.style.transform = "translateY(-6px)";
+        e.currentTarget.style.boxShadow = "0 10px 30px rgba(0,0,0,0.10)";
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.transform = "";
+        e.currentTarget.style.boxShadow = "";
       }}
     >
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
-        <div style={{ flex: 1, minWidth: 0 }}>
-          <div style={{ fontWeight: 700, marginBottom: 4, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{name}</div>
-          <div style={{ fontSize: 12, color: "#666", marginBottom: 8 }}>
-            {projectType} {projectType && region ? " • " : ""} {region}
-          </div>
-          <div style={{ fontSize: 13, color: "#333" }}>{capacity ? `Capacity: ${capacity}` : "Capacity: —"}</div>
-        </div>
+      <div className="developer-card__name">{companyName}</div>
 
-        <div style={{ marginLeft: 8 }}>
-          <button onClick={(e) => { e.stopPropagation(); onSelect(dev); }} aria-label={`Select ${name}`} >
-            Select
-          </button>
-        </div>
+      <div className="developer-card__logo">
+        {dev.logo ? (
+          <img
+            src={dev.logo}
+            alt={`${companyName} logo`}
+            onError={(ev) => (ev.currentTarget.style.display = "none")}
+          />
+        ) : (
+          <div className="developer-card__no-logo">No Logo</div>
+        )}
+      </div>
+
+      <div className="developer-card__actions">
+        <button className="tb-btn" onClick={() => onSelect(dev)}>
+          {dev.selected ? "Deselect" : "Select"}
+        </button>
+        <button className="tb-btn tb-btn-primary" onClick={() => onLearnMore(dev)}>
+          Learn More
+        </button>
       </div>
     </div>
   );
